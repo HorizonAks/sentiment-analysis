@@ -2,3 +2,4 @@ django==3.2.12
 requests
 azure-cognitiveservices-vision-face
 pillow
+opencv
