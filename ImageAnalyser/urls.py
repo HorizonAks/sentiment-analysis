@@ -1,7 +1,7 @@
-from django.urls import path, include
-
-from . import views
-
-urlpatterns = [
-    path('', views.viewImage, name='viewImage'),
+from django.urls import path  
+from .views import image_request  
+  
+app_name = 'ImageAnalyser'  
+urlpatterns = [  
+    path('', image_request, name = "image-request")  
 ]
