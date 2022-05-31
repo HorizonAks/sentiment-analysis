@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - Sentiment-Analyzer
+name: Build and deploy Python app to Azure Web App - sentiment-analyzer
 
 on:
   push:
@@ -58,6 +58,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'Sentiment-Analyzer'
+          app-name: 'sentiment-analyzer'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_977EAE6EFBCF4D6BAA231D9AC759E4A2 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_548EDF87446F4613930AA85EEF1F4113 }}
